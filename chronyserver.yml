@@ -1,0 +1,8 @@
+---
+- hosts: mail
+  become: true
+  roles:
+
+   - role: ansible.chrony
+     chrony__ntp_servers:
+     - 'prdx-ntp.ziyotek.local'
